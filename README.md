@@ -6,9 +6,9 @@ This is the official repository of Nose-Keeper, providing the training codes and
 
 Nose-Keeper is an advanced smartphone application developed using deep learning technology, designed specifically for the identification of nasal diseases. Given the potential commercial application and the need to protect intellectual property, direct public access to the application is not available currently. If you want to experience Nose-Keeper, please submit an application to us according to the following process. We also welcome professionals from the fields of research and education to apply for access, thereby facilitating and perfecting the application of Nose-Keeper in the diagnosis of nasal diseases.
 
-## Application Process
+## Application Procedures
 
-If you are interested in using Nose-Keeper for research or educational purposes, please follow the steps below to submit your application:
+If you are interested in using Nose-Keeper for testing, research or educational purposes, please follow the steps below to submit your application:
 
 ### Send an Application Email
 
