@@ -1,8 +1,10 @@
 # Nose-Keeper
-This is the official repository of Nose-Keeper, providing the training code and weights used by Nose-Keeper. We also provided some endoscopic images of nasopharyngeal carcinoma for testing.
+This is the official repository of Nose-Keeper, providing the training code and weights used by Nose-Keeper. We also provided some while-light endoscopic images for testing.
+![Nose-Keeper_demo](https://github.com/YubiaoYue/Nose-Keeper/assets/141175829/f35edad7-83bc-4808-83c1-772cdd571c44)
+
 # How to Apply for Access to Nose-Keeper
 
-Nose-Keeper is an advanced smartphone application developed using deep learning technology, designed specifically for the identification of nasal diseases. Given the potential commercial application and the need to protect intellectual property, direct public access to the application is not available. However, we welcome professionals from research and educational fields to apply for access.
+Nose-Keeper is an advanced smartphone application developed using deep learning technology, designed specifically for the identification of nasal diseases. Given the potential commercial application and the need to protect intellectual property, direct public access to the application is not available currently. If you want to experience Nose-Keeper, please submit an application to us according to the following process. We also welcome professionals from the fields of research and education to apply for access, thereby facilitating and perfecting the application of Nose-Keeper in the diagnosis of nasal diseases.
 
 ## Application Process
 
