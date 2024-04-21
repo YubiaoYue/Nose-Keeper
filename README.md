@@ -1,8 +1,8 @@
 # Nose-Keeper
 This is the official repository of Nose-Keeper, providing the training codes and model weights used by Nose-Keeper. We also provided some while-light endoscopic images for testing.
-![Nose-Keeper_demo](https://github.com/YubiaoYue/Nose-Keeper/assets/141175829/f35edad7-83bc-4808-83c1-772cdd571c44)
 
-https://github.com/YubiaoYue/Nose-Keeper/assets/141175829/ecdba63a-b07b-4553-bb70-a1ea9357a28a
+
+https://github.com/YubiaoYue/Nose-Keeper/assets/141175829/755d1f33-e6a7-466d-a260-6ee3bcea6f83
 
 
 # How to Apply for Access to Nose-Keeper
