@@ -2,6 +2,9 @@
 This is the official repository of Nose-Keeper, providing the training codes and model weights used by Nose-Keeper. We also provided some while-light endoscopic images for testing.
 ![Nose-Keeper_demo](https://github.com/YubiaoYue/Nose-Keeper/assets/141175829/f35edad7-83bc-4808-83c1-772cdd571c44)
 
+https://github.com/YubiaoYue/Nose-Keeper/assets/141175829/ecdba63a-b07b-4553-bb70-a1ea9357a28a
+
+
 # How to Apply for Access to Nose-Keeper
 
 Nose-Keeper is an advanced smartphone application developed using deep learning technology, designed specifically for the identification of nasal diseases. Given the potential commercial application and the need to protect intellectual property, direct public access to the application is not available currently. If you want to experience Nose-Keeper, please submit an application to us according to the following process. We also welcome professionals from the fields of research and education to apply for access, thereby facilitating and perfecting the application of Nose-Keeper in the diagnosis of nasal diseases.
