@@ -1,9 +1,10 @@
-# Nose-Keeper
-This is the official repository of Nose-Keeper, providing the training codes and heatmap code used by Nose-Keeper. We also provided some while-light endoscopic images for testing.
+# 🚀🔥Nose-Keeper(AI-driven Smartphone App)🔥🚀
+🎉This is the official repository of Nose-Keeper, providing the training codes and heatmap code used by Nose-Keeper. We also provided some while-light endoscopic images for testing👌.
 
 
 https://github.com/YubiaoYue/Nose-Keeper/assets/141175829/755d1f33-e6a7-466d-a260-6ee3bcea6f83
-# The performance of various deep learning models in diagnosing nasopharyngeal carcinoma(NPC)
+# The performance of various deep learning models in diagnosing nasopharyngeal carcinoma(NPC)🧙‍♂️
+## 🐱‍💻The password will be announced after the manuscript is received✨~
 | Model|Precision|Sensitivity|Specificity|F1-score|Overall Accuracy|Model Weight|
 |:------:|:--------:|:----------:|:----------:|:----------:|:----------:|:----------:|
 | [**SwinT**](https://openaccess.thecvf.com/content/ICCV2021/html/Liu_Swin_Transformer_Hierarchical_Vision_Transformer_Using_Shifted_Windows_ICCV_2021_paper)|0.9949 (±0.0031)|0.9984 (±0.0023)|0.9991 (±0.0006) |0.9966 (±0.0015)|0.9515 (±0.0039)|[Baidu Netdisk](https://pan.baidu.com/s/1f-UgstoOcM075VQo0vomCw )|
@@ -16,11 +17,11 @@ https://github.com/YubiaoYue/Nose-Keeper/assets/141175829/755d1f33-e6a7-466d-a26
 |[**ConvNeXt**](https://openaccess.thecvf.com/content/CVPR2022/html/Liu_A_ConvNet_for_the_2020s_CVPR_2022_paper.html)|0.9933 (±0.0061) |	0.9948 (±0.0075)|	0.9988 (±0.0011) |0.9940 (±0.0037)|0.9455 (±0.0054) |[Baidu Netdisk](https://pan.baidu.com/s/1f-UgstoOcM075VQo0vomCw )|
 
 
-# How to Apply for Access to Nose-Keeper
+# How to Apply for Access to Nose-Keeper🔍
 
 Nose-Keeper is an advanced smartphone application developed using deep learning technology, designed specifically for the identification of nasal diseases. Given the potential commercial application and the need to protect intellectual property, direct public access to the application is not available currently. If you want to experience Nose-Keeper, please submit an application to us according to the following process. We also welcome professionals from the fields of research and education to apply for access, thereby facilitating and perfecting the application of Nose-Keeper in the diagnosis of nasal diseases.
 
-## Application Procedures
+## Application Procedures📝
 
 If you are interested in using Nose-Keeper for testing, research or educational purposes, please follow the steps below to submit your application:
 
