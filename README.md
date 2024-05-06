@@ -3,7 +3,7 @@
 
 
 https://github.com/YubiaoYue/Nose-Keeper/assets/141175829/755d1f33-e6a7-466d-a260-6ee3bcea6f83
-# The performance of various deep learning models in diagnosing nasopharyngeal carcinoma(NPC)🧙‍♂️
+# The performance of various deep learning models in diagnosing nasopharyngeal carcinoma(NPC)📈
 ## 🐱‍💻The password will be announced after the manuscript is received✨~
 | Model|Precision|Sensitivity|Specificity|F1-score|Overall Accuracy|Model Weight|
 |:------:|:--------:|:----------:|:----------:|:----------:|:----------:|:----------:|
@@ -25,11 +25,11 @@ Nose-Keeper is an advanced smartphone application developed using deep learning 
 
 If you are interested in using Nose-Keeper for testing, research or educational purposes, please follow the steps below to submit your application:
 
-### Send an Application Email
+### Send an Application Email📨
 
 - **Email Address**: Send an application email to [jiche2020@126.com](mailto:jiche2020@126.com).
 
-### Email Content
+### Email Content📜
 
 Your email should include the following information:
 
@@ -37,11 +37,11 @@ Your email should include the following information:
 - **Personal Identification**: Include your full name, profession, and affiliation.
 - **Commitment Statement**: Attach a signed statement promising that you will not use Nose-Keeper for any commercial purposes and will not infringe on any intellectual property rights.
 
-## Review Process
+## Review Process📌
 
 Our team will review each application to ensure all requests comply with our terms of use and intended purpose. Once your application is approved, we will send you access instructions and necessary download links via email.
 
-## Terms of Use
+## Terms of Use❌
 
 Please note that the use of Nose-Keeper is subject to specific terms and conditions, including but not limited to non-commercial use and no transferability. Applying for access indicates your agreement to these terms.
  
