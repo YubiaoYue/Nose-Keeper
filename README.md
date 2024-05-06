@@ -3,8 +3,7 @@
 
 
 https://github.com/YubiaoYue/Nose-Keeper/assets/141175829/755d1f33-e6a7-466d-a260-6ee3bcea6f83
-# The performance of various deep learning models in diagnosing nasopharyngeal carcinoma(NPC)📈
-## 🐱‍💻The password will be announced after the manuscript is received✨~
+# 🐱‍💻The performance of various deep learning models in diagnosing nasopharyngeal carcinoma(NPC)📈
 | Model|Precision|Sensitivity|Specificity|F1-score|Overall Accuracy|Model Weight|
 |:------:|:--------:|:----------:|:----------:|:----------:|:----------:|:----------:|
 | [**SwinT**](https://openaccess.thecvf.com/content/ICCV2021/html/Liu_Swin_Transformer_Hierarchical_Vision_Transformer_Using_Shifted_Windows_ICCV_2021_paper)|0.9949 (±0.0031)|0.9984 (±0.0023)|0.9991 (±0.0006) |0.9966 (±0.0015)|0.9515 (±0.0039)|[Baidu Netdisk](https://pan.baidu.com/s/1f-UgstoOcM075VQo0vomCw )|
