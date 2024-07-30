@@ -37,8 +37,7 @@ class ResizeTransform:
 
 
 def main():
-    # 注意输入的图片必须是32的整数倍
-    # 否则由于padding的原因会出现注意力飘逸的问题
+    # Please note that the size of the input image must be an integer multiple of 32, otherwise there may be issues with attention wandering due to padding
     img_size = 224
     assert img_size % 32 == 0
 
