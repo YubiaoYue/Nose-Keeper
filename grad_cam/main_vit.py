@@ -32,7 +32,6 @@ class ReshapeTransform:
 
 def main():
     model = vit_base_patch16_224()
-    # 链接: https://pan.baidu.com/s/1zqb08naP0RPqqfSXfkB2EA  密码: eu9f
     weights_path = "./vit_base_patch16_224.pth"
     model.load_state_dict(torch.load(weights_path, map_location="cpu"))
     # Since the final classification is done on the class token computed in the last attention block,
