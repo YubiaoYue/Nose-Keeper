@@ -66,7 +66,6 @@ You also need to install the prettytable library
         thresh = matrix.max() / 2
         for x in range(self.num_classes):
             for y in range(self.num_classes):
-                # 注意这里的matrix[y, x]不是matrix[x, y]
                 info = int(matrix[y, x])
                 plt.text(x, y, info,
                          verticalalignment='center',
