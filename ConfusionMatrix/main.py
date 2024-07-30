@@ -13,9 +13,9 @@ from model import MobileNetV2
 
 class ConfusionMatrix(object):
     """
-    注意，如果显示的图像不全，是matplotlib版本问题
-    本例程使用matplotlib-3.2.1(windows and ubuntu)绘制正常
-    需要额外安装prettytable库
+Note: If the displayed image is incomplete, it is a problem with the matplotlib version.
+This example uses matplotlib-3.2.1 (windows and ubuntu) to draw normally.
+You also need to install the prettytable library
     """
     def __init__(self, num_classes: int, labels: list):
         self.matrix = np.zeros((num_classes, num_classes))
@@ -53,17 +53,16 @@ class ConfusionMatrix(object):
         print(matrix)
         plt.imshow(matrix, cmap=plt.cm.Blues)
 
-        # 设置x轴坐标label
+        # Set the x-axis coordinate label
         plt.xticks(range(self.num_classes), self.labels, rotation=45)
-        # 设置y轴坐标label
+        # Set the y-axis coordinate label
         plt.yticks(range(self.num_classes), self.labels)
-        # 显示colorbar
         plt.colorbar()
         plt.xlabel('True Labels')
         plt.ylabel('Predicted Labels')
         plt.title('Confusion matrix')
 
-        # 在图中标注数量/概率信息
+        # # Annotate the quantity/probability information in the figure
         thresh = matrix.max() / 2
         for x in range(self.num_classes):
             for y in range(self.num_classes):
