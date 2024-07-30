@@ -1,13 +1,13 @@
 import torch
 import numpy as np
 class EarlyStopping:
-    """早停来防止过拟合，基于准确率"""
+    """Early stop to prevent overfitting, based on accuracy"""
     def __init__(self, patience=10, verbose=False, delta=0):
         """
         Args:
-            patience (int): 指标停止提升后等待多少个epoch后停止训练。
-            verbose (bool): 是否打印早停时的信息。
-            delta (float): 最小变化量，只有变化大于这个值时才认为是一个提升。
+            patience (int): When the training epochs of the model exceeds this value and model performance is not improved, the model training will be stopped.
+            verbose (bool): Whether to print early stop information.
+            delta (float): A value. Only when the change is greater than this value, it is considered that the performance of the model has improved.
         """
         self.patience = patience
         self.verbose = verbose
@@ -35,7 +35,7 @@ class EarlyStopping:
             self.counter = 0
 
     def save_checkpoint(self, val_acc, model):
-        """保存模型"""
+        """Save model checkpoint"""
         if self.verbose:
             print(f'Validation accuracy increased ({self.val_acc_max:.6f} --> {val_acc:.6f}).  Saving model ...')
         torch.save(model.state_dict(), 'checkpoint.pt')
