@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 from torchvision import transforms
 from utils import GradCAM, show_cam_on_image, center_crop_img
 from swin_model import swin_base_patch4_window7_224
-
+import timm
 
 class ResizeTransform:
     def __init__(self, im_h: int, im_w: int):
@@ -41,17 +41,16 @@ def main():
     img_size = 224
     assert img_size % 32 == 0
 
-    model = swin_base_patch4_window7_224()
-    # https://github.com/SwinTransformer/storage/releases/download/v1.0.0/swin_base_patch4_window7_224.pth
-    weights_path = "./swin_base_patch4_window7_224.pth"
+    model = timm.create_model('swin_tiny_patch4_window7_224', pretrained=True, num_classes=7)
+    weights_path = "pretrained_swin_base_patch4_window7_224.pth"
     model.load_state_dict(torch.load(weights_path, map_location="cpu")["model"], strict=False)
 
     target_layers = [model.norm]
 
     data_transform = transforms.Compose([transforms.ToTensor(),
-                                         transforms.Normalize([0.485, 0.456, 0.406], [0.229, 0.224, 0.225])])
+                                         transforms.Normalize([0.2394,0.2421,0.2381], [0.1849, 0.28, 0.2698])])
     # load image
-    img_path = "both.png"
+    img_path = "endoscopic.jpg"
     assert os.path.exists(img_path), "file: '{}' dose not exist.".format(img_path)
     img = Image.open(img_path).convert('RGB')
     img = np.array(img, dtype=np.uint8)
@@ -65,8 +64,8 @@ def main():
 
     cam = GradCAM(model=model, target_layers=target_layers, use_cuda=False,
                   reshape_transform=ResizeTransform(im_h=img_size, im_w=img_size))
-    target_category = 281  # tabby, tabby cat
-    # target_category = 254  # pug, pug-dog
+    
+    target_category = None
 
     grayscale_cam = cam(input_tensor=input_tensor, target_category=target_category)
 
