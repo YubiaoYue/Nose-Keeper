@@ -7,9 +7,7 @@ import numpy as np
 from tqdm import tqdm
 import matplotlib.pyplot as plt
 from prettytable import PrettyTable
-
-from model import MobileNetV2
-
+import timm
 
 class ConfusionMatrix(object):
     """
@@ -36,16 +34,17 @@ You also need to install the prettytable library
 
         # precision, recall, specificity
         table = PrettyTable()
-        table.field_names = ["", "Precision", "Recall", "Specificity"]
+        table.field_names = ["", "Precision", "Recall", "Specificity", "F1-score"]
         for i in range(self.num_classes):
             TP = self.matrix[i, i]
             FP = np.sum(self.matrix[i, :]) - TP
             FN = np.sum(self.matrix[:, i]) - TP
             TN = np.sum(self.matrix) - TP - FP - FN
-            Precision = round(TP / (TP + FP), 3) if TP + FP != 0 else 0.
-            Recall = round(TP / (TP + FN), 3) if TP + FN != 0 else 0.
-            Specificity = round(TN / (TN + FP), 3) if TN + FP != 0 else 0.
-            table.add_row([self.labels[i], Precision, Recall, Specificity])
+            Precision = round(TP / (TP + FP), 4) if TP + FP != 0 else 0.
+            Recall = round(TP / (TP + FN), 4) if TP + FN != 0 else 0.
+            Specificity = round(TN / (TN + FP), 4) if TN + FP != 0 else 0.
+            F1_score = round(2*(Precision*Recall)/(Precision+Recall), 4) if Precision+Recall != 0 else 0.
+            table.add_row([self.labels[i], Precision, Recall, Specificity, F1_score])
         print(table)
 
     def plot(self):
@@ -79,14 +78,8 @@ if __name__ == '__main__':
     device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
     print(device)
 
-    data_transform = transforms.Compose([transforms.Resize(256),
-                                         transforms.CenterCrop(224),
-                                         transforms.ToTensor(),
-                                         transforms.Normalize([0.485, 0.456, 0.406], [0.229, 0.224, 0.225])])
-
-    data_root = os.path.abspath(os.path.join(os.getcwd(), "../.."))  # get data root path
-    image_path = os.path.join(data_root, "data_set", "flower_data")  # flower data set path
-    assert os.path.exists(image_path), "data path {} does not exist.".format(image_path)
+    data_transform = transforms.Compose([transforms.ToTensor(),
+                                         transforms.Normalize([0.2394,0.2421,0.2381], [0.1849, 0.28, 0.2698])])
 
     validate_dataset = datasets.ImageFolder(root=os.path.join(image_path, "val"),
                                             transform=data_transform)
@@ -95,9 +88,9 @@ if __name__ == '__main__':
     validate_loader = torch.utils.data.DataLoader(validate_dataset,
                                                   batch_size=batch_size, shuffle=False,
                                                   num_workers=2)
-    net = MobileNetV2(num_classes=5)
+    net = timm.create_model('swin_tiny_patch4_window7_224', pretrained=True, num_classes=7)
     # load pretrain weights
-    model_weight_path = "./MobileNetV2.pth"
+    model_weight_path = ""
     assert os.path.exists(model_weight_path), "cannot find {} file".format(model_weight_path)
     net.load_state_dict(torch.load(model_weight_path, map_location=device))
     net.to(device)
