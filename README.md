@@ -1,4 +1,4 @@
-# 🚀🔥Nose-Keeper(Since the cloud server has expired, we are redeploying it)🔥🚀
+# 🚀🔥Nose-Keeper(Since the cloud server and research grants have expired, we are redeploying it)🔥🚀
 🎉This is the official repository of Nose-Keeper, providing the training codes and heatmap code used by Nose-Keeper. We also provided some while-light endoscopic images for testing👌.
 
 https://github.com/YubiaoYue/Nose-Keeper/assets/141175829/755d1f33-e6a7-466d-a260-6ee3bcea6f83
@@ -31,14 +31,11 @@ If you are interested in using Nose-Keeper for testing, research or educational 
 
 - **Email Address**: Send an application email to [jiche2020@126.com](mailto:jiche2020@126.com).
 
-### Email Content📜
-
-Your email should include the following information:
-
-- **Purpose of Use**: Briefly describe how you intend to use Nose-Keeper.
-- **Personal Identification**: Include your full name, profession, and affiliation.
-- **Commitment Statement**: Attach a signed statement promising that you will not use Nose-Keeper for any commercial purposes and will not infringe on any intellectual property rights.
-
+### Your email should include the following information📜
+- **Research plan summary**: Please briefly describe the research purpose, research methods, and research content.
+- **Institution information**: Please provide detailed information about your institution for our review and follow-up communication.
+- **Handwritten signature**: Please write a clear handwritten signature and indicate the date of signature.
+- **Please send us a scanned version of the statement. Once we receive the complete statement, we will evaluate it as soon as possible and contact you in a timely manner.**
 ## Review Process📌
 
 Our team will review each application to ensure all requests comply with our terms of use and intended purpose. Once your application is approved, we will send you access instructions and necessary download links via email.
